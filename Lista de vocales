@@ -3,6 +3,9 @@ from microbit import *
 
 lista_vocales = ["A","E","I","O","U"]
 
-for i in lista_vocales:
-    display.show(i)
+index = 0
+
+while(index < len(lista_vocales)):
+    display.show( lista_vocales[index])
+    index = index + 1
     sleep(1000)
