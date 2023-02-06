@@ -1,0 +1,8 @@
+from microbit import *
+
+import music
+import speech
+
+speech.say("ey macarena")
+lstNotas = ['e:5', 'f', 'g', 'b:3', 'a:4', 'd:5', 'g:2','a']
+music.play(lstNotas)
