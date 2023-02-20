@@ -1,0 +1,9 @@
+from microbit import *
+
+
+lista_animales = ["Perro", "Gato", "Rana", "Serpiente", "Leon", "Mono"]
+
+
+for i in lista_animales:
+    display.scroll(i)
+    sleep(500)
