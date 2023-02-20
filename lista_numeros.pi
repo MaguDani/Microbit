@@ -1,0 +1,11 @@
+from microbit import *
+
+
+lista_numeros = [14, 20, 4, 7, 18]
+total = 0
+
+for i in lista_numeros:
+    display.scroll(i)
+    total = total + i
+display.scroll(total)   
+    
