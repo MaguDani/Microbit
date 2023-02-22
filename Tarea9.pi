@@ -1,0 +1,29 @@
+from microbit import *
+
+import radio
+
+
+radio.on()
+radio.config(channel=43)
+
+notas = ['C4:4','D4:7', 'E4:7', 'F4:5', 'a4:6', 'g4:7']
+
+
+def lista_texto(lista):
+    mensaje = "Hola hello"
+    for i in lista:
+        mensaje += i + ","
+    return mensaje
+
+while True:
+    if button_a.was_pressed():
+        message = lista_texto(notas)
+        radio.send(message)
+        display.show("Que pasa")
+        sleep(1000)
+    elif button_b.was_pressed():
+        display.show("Chicken Litel")
+        sleep(1000)
+    else:
+        display.show("?")
+        sleep(1000)
